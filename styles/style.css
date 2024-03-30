@@ -2,4 +2,195 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: url(../images/cover-image-dark.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+/* -----------------------header------------------------ */
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr auto;
+  padding: 10px;
+  min-height: 668px;
+}
+
+/* -----------------------decorated-zone start------------------------ */
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  border-right: 1px solid #FF0070;
+  border-top: 1px solid #FF0070;
+  inline-size: 25px;
+  block-size: 25px;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  border-left: 1px solid #FF0070;
+  border-bottom: 1px solid #FF0070;
+  inline-size: 25px;
+  block-size: 25px;
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
+}
+
+/* -----------------------decorated-zone end------------------------ */
+
+.header__rec {
+  text-transform: uppercase;
+  position: absolute;
+  inset-block-start: 14px;
+  inset-inline-end: 40px;
+  color: #FF0070;
+}
+
+.header__rec::after {
+  content: "";
+  position: absolute;
+  inline-size: 10px;
+  block-size: 10px;
+  box-shadow: 0px 0px 4px 2px #FF0070;
+  background: #FF0070;
+  border-radius: 50%;
+  inset-block-start: 4px;
+  inset-inline-end: -20px;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: center;
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 10px;
+  text-align: center;
+}
+
+/* -----------------------header button start------------------------ */
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  color: #FF0070;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+.header__theme-menu-button:focus-visible {
+  outline-offset: 1px;
+  outline: 1px solid #FF0070;
+}
+.header__theme-menu-button:hover {
+  outline: 1px solid #FF0070;
+}
+.header__theme-menu-button_active {
+  outline: 1px solid #FF0070;
+}
+
+/* -----------------------header button end------------------------ */
+
+.header__title {
+  color: #DB00FF;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-family: IBM Plex Mono;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 95.7px;
+  text-align: left;
+}
+
+.header__text {
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+  background-color: #FF0070;
+}
+
+.header__text {
+  align-self: center;
+}
+
+/* -----------------------content------------------------ */
+.content {
+  padding: 10px;
+  display: grid;
+  gap: 20px;
+}
+
+.content__why-is-it-so-difficult {
+  display: grid;
+  gap: 12px;
+}
+
+.content__what_reduces {
+  display: grid;
+  gap: 12px;
+}
+
+.content__how-to-concentrate {
+  display: grid;
+  gap: 12px;
+}
+
+.content__title {
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+  color: #FF0070;
+}
+
+.content__subtitle {
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+  background-color: #FF0070;
+}
+
+.content__text {
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: left;
+  color: #F1B2CE;
+}
+
+/* -----------------------footer------------------------ */
+
+.footer {
+  display: grid;
+  padding: 10px;
+  min-height: 668px;
+  align-items: center;
+}
+
+.footer__title {
+  font-family: IBM Plex Mono;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 95.7px;
+  text-align: left;
+  color: #DB00FF;
+}
+
+@media (min-width: 1920px) {
+  .header {
+    min-height: 1080px;
+  }
 }
