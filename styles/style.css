@@ -155,6 +155,15 @@
 .content__subtitle {
   font-family: IBM Plex Mono;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: left;
+  background-color: #FF0070;
+}
+
+.content__highlighted-title {
+  font-family: IBM Plex Mono;
+  font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
   text-align: left;
@@ -168,6 +177,39 @@
   line-height: 23.4px;
   text-align: left;
   color: #F1B2CE;
+}
+
+.content__gallery {
+  display: grid;
+  gap: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content__gallery-images {
+  display: grid;
+  gap: 10px;
+  max-width: 355px;
+}
+
+.sunset {
+  max-width: 355px;
+}
+
+.ice-cream {
+  max-width: 355px;
+}
+
+.tape {
+  max-width: 355px;
+}
+
+.books {
+  max-width: 355px;
+}
+
+.street {
+  max-width: 355px;
 }
 
 /* -----------------------footer------------------------ */
