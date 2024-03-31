@@ -3,6 +3,9 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-image: var(--background-image);
   background-color: var(--background-color);
 }
@@ -220,6 +223,7 @@
   min-height: 668px;
   height: 100vh;
   align-items: center;
+  justify-content: center;
 }
 
 .footer__title {
@@ -230,4 +234,63 @@
   line-height: 95.7px;
   text-align: left;
   color: var(--title-color);
+}
+
+@media (min-width: 728px) and (width<1024px) {
+
+  .header {
+    min-height: 1024px;
+    padding: 20px 20px 20px 0px;
+  }
+
+  .header__rec {
+    inset-block-start: 25px;
+    inset-inline-end: 50px;
+  }
+
+  .decorated-zone::before {
+    inset-block-start: 20px;
+    inset-inline-end: 20px;
+  }
+  
+  .decorated-zone::after {
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
+  }
+
+  .header__text {
+    margin-left: auto;
+    max-width: 365px;
+  }
+
+  .header__rec::after {
+    inset-block-start: 2px;
+    inset-inline-end: -20px;
+  }
+
+  .content__why-is-it-so-difficult {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px;
+  }
+
+  .content__what_reduces-main {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+  }
+
+  .content__how-to-concentrate {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px;
+  }
+
+  .footer {
+    min-height: 1024px;
+  }
+
 }
