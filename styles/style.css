@@ -2,14 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-image: url(../images/cover-image-dark.png);
-  /* background-size: cover;
-  background-attachment: fixed;
-  background-position: center; */
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed;
+  background-image: var(--background-image);
 }
 /* -----------------------header------------------------ */
 
@@ -26,8 +19,8 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  border-right: 1px solid #FF0070;
-  border-top: 1px solid #FF0070;
+  border-right: 1px solid var(--decorated-color);
+  border-top: 1px solid var(--decorated-color);
   inline-size: 25px;
   block-size: 25px;
   inset-block-start: 10px;
@@ -37,8 +30,8 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  border-left: 1px solid #FF0070;
-  border-bottom: 1px solid #FF0070;
+  border-left: 1px solid var(--decorated-color);
+  border-bottom: 1px solid var(--decorated-color);
   inline-size: 25px;
   block-size: 25px;
   inset-inline-start: 10px;
@@ -84,7 +77,7 @@
   padding: 2px 13px;
   background-color: transparent;
   border: none;
-  color: #FF0070;
+  color: var(--decorated-color);
   cursor: pointer;
   font-family: IBM Plex Mono;
   font-size: 18px;
@@ -98,19 +91,19 @@
 }
 .header__theme-menu-button:focus-visible {
   outline-offset: 1px;
-  outline: 1px solid #FF0070;
+  outline: 1px solid var(--decorated-color);
 }
 .header__theme-menu-button:hover {
-  outline: 1px solid #FF0070;
+  outline: 1px solid var(--decorated-color);
 }
 .header__theme-menu-button_active {
-  outline: 1px solid #FF0070;
+  outline: 1px solid var(--decorated-color);
 }
 
 /* -----------------------header button end------------------------ */
 
 .header__title {
-  color: #DB00FF;
+  color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   font-family: IBM Plex Mono;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -126,7 +119,7 @@
   font-weight: 700;
   line-height: 23.4px;
   text-align: left;
-  background-color: #FF0070;
+  background-color: var(--background-color);
 }
 
 /* -----------------------content------------------------ */
@@ -137,33 +130,32 @@
 }
 
 .content__title {
-  /* padding-bottom: 20px; */
   font-family: IBM Plex Mono;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
   text-align: left;
-  color: #FF0070;
+  color: var(--text-color-title);
 }
 
 .content__subtitle {
   margin-top: 20px;
   font-family: IBM Plex Mono;
   font-size: 18px;
-  font-weight: 400;
-  line-height: 23.4px;
-  text-align: left;
-  background-color: #FF0070;
-}
-
-.content__highlighted-title {
-  margin-top: 20px;
-  font-family: IBM Plex Mono;
-  font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
   text-align: left;
-  background-color: #FF0070;
+  background-color: var(--background-color);;
+}
+
+.content__no-highlighted-title {
+  margin-top: 20px;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: left;
+  background-color: var(--background-color);
 }
 
 .content__text {
@@ -174,7 +166,7 @@
   font-weight: 400;
   line-height: 23.4px;
   text-align: left;
-  color: #F1B2CE;
+  color: var(--text-color);
 }
 
 .content__gallery__highlighted-title {
@@ -183,7 +175,7 @@
   font-weight: 700;
   line-height: 23.4px;
   text-align: left;
-  background-color: #FF0070;
+  background-color: var(--background-color);
 }
 
 .content__gallery {
@@ -224,6 +216,7 @@
   display: grid;
   padding: 10px;
   min-height: 668px;
+  height: 100vh;
   align-items: center;
 }
 
@@ -234,7 +227,7 @@
   font-weight: 700;
   line-height: 95.7px;
   text-align: left;
-  color: #DB00FF;
+  color: var(--title-color);
 }
 
 @media (min-width: 1920px) {
