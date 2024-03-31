@@ -2,7 +2,9 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-attachment: fixed;
   background-image: var(--background-image);
+  background-color: var(--background-color);
 }
 /* -----------------------header------------------------ */
 
@@ -19,8 +21,8 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  border-right: 1px solid var(--decorated-color);
-  border-top: 1px solid var(--decorated-color);
+  border-right: 1px solid var(--decorated-color, #FF0070);
+  border-top: 1px solid var(--decorated-color, #FF0070);
   inline-size: 25px;
   block-size: 25px;
   inset-block-start: 10px;
@@ -30,8 +32,8 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  border-left: 1px solid var(--decorated-color);
-  border-bottom: 1px solid var(--decorated-color);
+  border-left: 1px solid var(--decorated-color, #FF0070);
+  border-bottom: 1px solid var(--decorated-color, #FF0070);
   inline-size: 25px;
   block-size: 25px;
   inset-inline-start: 10px;
@@ -77,7 +79,7 @@
   padding: 2px 13px;
   background-color: transparent;
   border: none;
-  color: var(--decorated-color);
+  color: var(--decorated-color, #FF0070);
   cursor: pointer;
   font-family: IBM Plex Mono;
   font-size: 18px;
@@ -91,20 +93,20 @@
 }
 .header__theme-menu-button:focus-visible {
   outline-offset: 1px;
-  outline: 1px solid var(--decorated-color);
+  outline: 1px solid var(--decorated-color, #FF0070);
 }
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--decorated-color);
+  outline: 1px solid var(--decorated-color, #FF0070);
 }
 .header__theme-menu-button_active {
-  outline: 1px solid var(--decorated-color);
+  outline: 1px solid var(--decorated-color, #FF0070);
 }
 
 /* -----------------------header button end------------------------ */
 
 .header__title {
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
   font-family: IBM Plex Mono;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
@@ -135,21 +137,21 @@
   font-weight: 700;
   line-height: 23.4px;
   text-align: left;
-  color: var(--text-color-title);
+  color: var(--text-color-title, #FF0070);
 }
 
 .content__subtitle {
-  margin-top: 20px;
+  margin-block-start: 20px;
   font-family: IBM Plex Mono;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
   text-align: left;
-  background-color: var(--background-color);;
+  background-color: var(--background-color);
 }
 
 .content__no-highlighted-title {
-  margin-top: 20px;
+  margin-block-start: 20px;
   font-family: IBM Plex Mono;
   font-size: 18px;
   font-weight: 400;
@@ -159,14 +161,14 @@
 }
 
 .content__text {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-block-start: 10px;
+  margin-block-end: 20px;
   font-family: IBM Plex Mono;
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
   text-align: left;
-  color: var(--text-color);
+  color: var(--text-color, #F1B2CE);
 }
 
 .content__gallery__highlighted-title {
@@ -228,10 +230,4 @@
   line-height: 95.7px;
   text-align: left;
   color: var(--title-color);
-}
-
-@media (min-width: 1920px) {
-  .header {
-    min-height: 1080px;
-  }
 }
