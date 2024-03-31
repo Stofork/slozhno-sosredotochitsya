@@ -3,9 +3,13 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: url(../images/cover-image-dark.png);
+  /* background-size: cover;
+  background-attachment: fixed;
+  background-position: center; */
+  background-repeat: no-repeat;
+  background-position: top center;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
 }
 /* -----------------------header------------------------ */
 
@@ -14,6 +18,7 @@
   grid-template-rows: 1fr auto 1fr auto;
   padding: 10px;
   min-height: 668px;
+  height: 100vh;
 }
 
 /* -----------------------decorated-zone start------------------------ */
