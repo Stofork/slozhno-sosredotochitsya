@@ -46,6 +46,7 @@
 /* -----------------------decorated-zone end------------------------ */
 
 .header__rec {
+  display: none;
   text-transform: uppercase;
   position: absolute;
   inset-block-start: 14px;
