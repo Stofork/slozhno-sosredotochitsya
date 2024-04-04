@@ -264,6 +264,10 @@
   display: grid;
 }
 
+.content__why-is-it-so-difficult .content__text:last-child{
+  margin-block-end: 0px;
+}
+
 @media (375px < width <= 768px) {
   .content__why-is-it-so-difficult {
     gap: 20px;
@@ -286,6 +290,11 @@
     padding-top: 20px;
   }
 }
+
+.content__what-reduces .content__text:last-child{
+  margin-block-end: 0px;
+}
+
 
 @media (375px < width <= 768px) {
   .content__what-reduces {
@@ -317,6 +326,11 @@
 .content__how-to-concentrate {
   display: grid;
 }
+
+.content__how-to-concentrate .content__text:last-child{
+  margin-block-end: 0px;
+}
+
 
 @media (375px < width <= 768px) {
   .content__how-to-concentrate {
