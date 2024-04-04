@@ -190,7 +190,7 @@
 }
 
 .header__content-text {
-  background-color: var(--background-color);
+  background-color: var(--background-color-text);
 }
 
 @media (width > 375px) {
@@ -201,7 +201,7 @@
   }
   
   .header__content-text {
-    background-color: var(--background-color);
+    background-color: var(--background-color-text);
     grid-column: 2;
   }
 }
@@ -229,7 +229,7 @@
   font-weight: 700;
   line-height: 1.3;
   text-align: left;
-  background-color: var(--background-color);
+  background-color: var(--background-color-text);
 }
 
 .content__no-highlighted-title {
@@ -239,7 +239,7 @@
   font-weight: 400;
   line-height: 1.3;
   text-align: left;
-  background-color: var(--background-color);
+  background-color: var(--background-color-text);
 }
 
 .content__text {
@@ -360,7 +360,7 @@
   font-weight: 700;
   line-height: 1.3;
   text-align: left;
-  background-color: var(--background-color);
+  background-color: var(--background-color-text);
 }
 
 .content__gallery {
