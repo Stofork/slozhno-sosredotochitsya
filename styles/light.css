@@ -11,11 +11,14 @@
   */
   --background-image: url(../images/cover-image-light.png);
   --background-color: #FFF1F7;
-  --decorated-color: #353430;
+  --decorated-color: #353430; 
+  --decorated-color-hover: #32312D66;
   --title-color: #FFC2E6;
   --background-color-text: #FF8DCB;
   --text-color-title: #353430;
   --text-color: #353430;
+  --link-shadow-color: #FF8DCB;
+  --link-border-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -24,9 +27,12 @@
     --background-image: url(../images/cover-image-light.png);
     --background-color: #FFF1F7;
     --decorated-color: #353430;
+    --decorated-color-hover: #32312D66;
     --title-color: #FFC2E6;
     --background-color-text: #FF8DCB;
     --text-color-title: #353430;
     --text-color: #353430;
+    --link-shadow-color: #FF8DCB;
+    --link-border-color: #353430;
     }
 }

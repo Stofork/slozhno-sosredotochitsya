@@ -13,10 +13,13 @@
   --background-image: url(../images/cover-image-dark.png);
   --background-color: #000028;
   --decorated-color: #FF0070;
+  --decorated-color-hover: #FF007066;
   --title-color: #DB00FF;
   --background-color-text: #FF0070;
-  --text-color-title: #FF0070;
+  --text-color-title: #000028;
   --text-color: #F1B2CE;
+  --link-shadow-color: #FF0070;
+  --link-border-color: #F1B2CE;
 }
 
 .page.theme_dark .header__rec {
