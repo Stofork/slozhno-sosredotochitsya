@@ -15,7 +15,10 @@
   --decorated-color-hover: #32312D66;
   --title-color: #FFC2E6;
   --background-color-text: #FF8DCB;
+  --text-color-heading: #353430;
+  --text-color-subtitle: #353430;
   --text-color-title: #353430;
+  --text-color-title-no-highlighted: #353430;
   --text-color: #353430;
   --link-shadow-color: #FF8DCB;
   --link-border-color: #353430;
@@ -30,7 +33,10 @@
     --decorated-color-hover: #32312D66;
     --title-color: #FFC2E6;
     --background-color-text: #FF8DCB;
+    --text-color-heading: #353430;
+    --text-color-subtitle: #353430;
     --text-color-title: #353430;
+    --text-color-title-no-highlighted: #353430;
     --text-color: #353430;
     --link-shadow-color: #FF8DCB;
     --link-border-color: #353430;

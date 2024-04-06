@@ -10,8 +10,11 @@
   --decorated-color-hover: #FF007066;
   --title-color: #DB00FF;
   --background-color-text: #FF0070;
+  --text-color-heading: #000028;
+  --text-color-subtitle: #000028;
   --text-color-title: #FF0070;
-  --tex-color: #F1B2CE;
+  --text-color-title-no-highlighted: #000028;
+  --text-color: #F1B2CE;
   --link-shadow-color: #FF0070;
   --link-border-color: #F1B2CE;
 }
